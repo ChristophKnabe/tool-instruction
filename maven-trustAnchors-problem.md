@@ -23,7 +23,7 @@ You must provide the keystore password for all Java applications, which make htt
 3. Provide it for all Java applications: Define the environment variable <br>
 `JAVA_OPTS="$JAVA_OPTS -Djavax.net.ssl.trustStorePassword=changeit"`
 
-There are OS-dependent and multiple ways to define an environment variable, be it in a shell script, for one user, or for all users. Here I only explain how to do it on Ubuntu for one user. Add the following line to the file `.profile` in your home directory:
+There are OS-dependent and multiple ways to define an environment variable, be it in a shell script, for one user, or for all users. Here I only explain how to do it on Ubuntu for one user, but for Maven and SBT. Add the following line to the file `.profile` in your home directory:
 ```
 export JAVA_OPTS="$JAVA_OPTS -Djavax.net.ssl.trustStorePassword=changeit"
 ```
