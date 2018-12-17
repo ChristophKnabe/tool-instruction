@@ -264,7 +264,7 @@ Fehler traten auf beim Bearbeiten von:
  openjdk-11-jdk:amd64
  openjdk-11-jre:amd64
 ```
-Anscheinend klappt die Konfiguration des Paketes `ca-certificates-java` nicht. Denn im Log erscheint 
+It seems the configuration of the package `ca-certificates-java` failed. As in the log appeared
 ```
 Keystore /etc/ssl/certs/java/cacerts wird in /etc/ssl/certs/java/cacerts.dpkg-new importiert
 ...
@@ -272,6 +272,13 @@ failed to convert PKCS12 keystore to JKS
 dpkg: Fehler beim Bearbeiten des Paketes ca-certificates-java (--configure):
 ```
 
-ALSO: Versuch, das Paket `ca-certificates-java` auf der Kommandozeile zu installieren:
-Dazu war es nötig, zuerst `sudo apt-get remove ca-certificates-java` durchzuführen.
-Sodann `sudo apt-get install ca-certificates-java`
+=> Try, to install the package `ca-certificates-java` on the command line:
+In order to do this, it was required to execute `sudo apt-get remove ca-certificates-java`.
+Then `sudo apt-get install ca-certificates-java`
+
+Quite a lot of keys are successfully imported:
+```
+Keystore /etc/ssl/certs/java/cacerts wird in /etc/ssl/certs/java/cacerts.dpkg-new importiert...
+Eintrag für Alias debian:accvraiz1.pem erfolgreich importiert.
+...
+```
