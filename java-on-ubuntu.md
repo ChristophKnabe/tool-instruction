@@ -282,3 +282,9 @@ Keystore /etc/ssl/certs/java/cacerts wird in /etc/ssl/certs/java/cacerts.dpkg-ne
 Eintrag für Alias debian:accvraiz1.pem erfolgreich importiert.
 ...
 ```
+## Next Trial
+`sudo apt-get install openjdk-11-jre-headless` 
+This worked. Further succeeded: `sudo apt-get install openjdk-11-jre-headless`
+Rest of JDK 11: In Synaptic select package `openjdk-11-jdk` and install it.
+Succeeded as well, may be because of the Environment Variable globally defined on my system:
+`JAVA_OPTS= -Djavax.net.ssl.trustStorePassword=changeit`
