@@ -273,4 +273,5 @@ dpkg: Fehler beim Bearbeiten des Paketes ca-certificates-java (--configure):
 ```
 
 ALSO: Versuch, das Paket `ca-certificates-java` auf der Kommandozeile zu installieren:
-`apt-get install ca-certificates-java`
+Dazu war es nötig, zuerst `sudo apt-get remove ca-certificates-java` durchzuführen.
+Sodann `sudo apt-get install ca-certificates-java`
