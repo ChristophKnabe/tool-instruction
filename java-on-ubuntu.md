@@ -264,3 +264,13 @@ Fehler traten auf beim Bearbeiten von:
  openjdk-11-jdk:amd64
  openjdk-11-jre:amd64
 ```
+Anscheinend klappt die Konfiguration des Paketes `ca-certificates-java` nicht. Denn im Log erscheint 
+```
+Keystore /etc/ssl/certs/java/cacerts wird in /etc/ssl/certs/java/cacerts.dpkg-new importiert
+...
+failed to convert PKCS12 keystore to JKS
+dpkg: Fehler beim Bearbeiten des Paketes ca-certificates-java (--configure):
+```
+
+ALSO: Versuch, das Paket `ca-certificates-java` auf der Kommandozeile zu installieren:
+`apt-get install ca-certificates-java`
