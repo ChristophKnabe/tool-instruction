@@ -288,3 +288,11 @@ This worked. Further succeeded: `sudo apt-get install openjdk-11-jre-headless`
 Rest of JDK 11: In Synaptic select package `openjdk-11-jdk` and install it.
 Succeeded as well, may be because of the Environment Variable globally defined on my system:
 `JAVA_OPTS= -Djavax.net.ssl.trustStorePassword=changeit`
+
+## Revert to Java 8
+The package name openjdk-11-jdk showed to be misleading. It has the version number 10.x. That makes me believe it contains only the JDK 10. Thus I will go back to JDK 8, but to OpenJDK from the distributor.
+
+Install packages openjdk-8-jdk and openjfx as well as the source packages openjdk-8-jdk-source openjfx-source.
+For Programming I and II we additionally need the JavaFX Scene Builder, which is now provided by Gluon. 
+See https://gluonhq.com/products/scene-builder/#download
+You can download a `*.deb` file and install it.
