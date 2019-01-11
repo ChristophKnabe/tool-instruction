@@ -1,4 +1,7 @@
 # Java on Ubuntu 18.04
+According to [Leonardo Zanivan](https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9) __it’s time! Migrating to Java 11__. He describes there reasons and steps for migrating your projects to Java 11.
+I will try this on a current LTS Linux.
+
 According to [Stephen Colebourne](https://blog.joda.org/2018/09/time-to-look-beyond-oracles-jdk.html) it is 
 __Time to look beyond Oracle's JDK__.
 If you want to run your Java applications for $free, 
@@ -290,9 +293,9 @@ Succeeded as well, may be because of the Environment Variable globally defined o
 `JAVA_OPTS= -Djavax.net.ssl.trustStorePassword=changeit`
 
 ## Revert to Java 8
-The package name openjdk-11-jdk showed to be misleading. It has the version number 10.x. That makes me believe it contains only the JDK 10. Thus I will go back to JDK 8, but to OpenJDK from the distributor.
+The package name openjdk-11-jdk showed to be misleading. It has the version number 10.x. When running the command `java -version` it also shows version 10. That makes me believe it contains only the JDK 10. Thus I will go back to JDK 8, but to OpenJDK from the distributor.
 
-Install packages openjdk-8-jdk and openjfx as well as the source packages openjdk-8-jdk-source openjfx-source.
+Install packages `openjdk-8-jdk` and `openjfx` as well as the source packages `openjdk-8-jdk-source` and `openjfx-source`.
 For Programming I and II we additionally need the JavaFX Scene Builder, which is now provided by Gluon. 
 See https://gluonhq.com/products/scene-builder/#download
 You can download a `*.deb` file and install it.
