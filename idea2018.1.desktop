@@ -1,0 +1,11 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Comment=
+Terminal=true #Nimm true, wenn unerklärliche Startfehler auftreten. Knabe 16-02-18
+#Upgraded from 2017.2.1 to 2018.1. Knabe 18-04-06
+Name=IntelliJ IDEA 2018.1 Community Edition
+Exec=/opt/idea-IC-181.4203.550/bin/idea.sh
+Icon=/opt/idea-IC-181.4203.550/bin/idea.png
+Type=Application
+Categories=Development
